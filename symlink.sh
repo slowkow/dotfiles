@@ -9,12 +9,17 @@ files=(
 .gitignore
 .inputrc
 .pandoc
+.tmux.conf
 )
 
 pwd=$(pwd)
 
 for f in ${files[*]}
 do
+  if [[ $(readlink ~/$f) = $pwd/$f ]]
+  then
+    continue
+  fi
   if [[ -e ~/$f ]]
   then
     if [[ -d ~/${f}.bak ]]

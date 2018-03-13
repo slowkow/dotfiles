@@ -146,3 +146,36 @@ export PS1
 
 PS2="\[${yellow}\]→ \[${reset}\]"
 export PS2
+
+# Use tmux to manage windows and tabs
+
+# On Broad servers:
+# use .tmux-2.1
+broad_hosts=(gold platinum silver lorax piglet tigger)
+
+# We're not in a tmux session.
+if [[ "$TMUX" == "" ]]
+then
+    host=$(hostname | cut -d. -f1)
+
+    # # This must be run OUTSIDE of a tmux session.
+    # # It fixes some weirdness about copy-paste with xsel and others.
+    # # Set the display for all sessions.
+    # for name in $(tmux ls -F $host 2>/dev/null); do
+    #     tmux setenv -g -t $name DISPLAY $DISPLAY 
+    # done
+
+    # Create tmux sessions on these hosts.
+    # if [[ " ${broad_hosts[@]} " =~ " $host " ]]
+    if test true
+    then
+      echo "get tmux going"
+        # Check for an existing session, or else create it.
+        if [[ "$(tmux ls 2>/dev/null | grep -o $host)" == "" ]]
+        then
+            tmux new-session -s "$host"
+        else
+            tmux attach-session -t "$host"
+        fi
+    fi
+fi
