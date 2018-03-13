@@ -1,0 +1,46 @@
+# ~/.inputrc
+# https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html#Readline-Init-File-Syntax
+
+set editing-mode vi
+
+$if mode=vi
+
+    # Case-insensitive completion.
+    #set completion-ignore-case on
+    
+    # Also insensitive to - versus _
+    #set completion-map-case on
+
+    # Expand tilde when Readline attempts word completion.
+    set expand-tilde on
+
+    # When completing, don't repeat the present characters.
+    set skip-completed-text on
+
+    # Unlimited history. Seems to crash bash ... 
+    #set history-size 0
+
+    set keymap vi-command
+
+    # No more vi-change-case
+    "~":""
+
+    # Reload this file with c-x c-r.
+    "\C-x\C-r": re-read-init-file
+
+    # Clear the screen.
+    "\C-l": clear-screen
+
+    set keymap vi-insert
+
+    # Need this to be able to type ~ in insert mode.
+    "~":self-insert
+
+    # Reload this file with c-x c-r.
+    "\C-x\C-r": re-read-init-file
+
+    # Clear the screen in insert-mode too! yay
+    "\C-l": clear-screen
+
+$endif
+
