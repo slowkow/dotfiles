@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -o xtrace
-
 files=(
 .bashrc
 .bash_profile
@@ -9,6 +7,7 @@ files=(
 .gitignore
 .inputrc
 .pandoc
+.sqliterc
 .tmux.conf
 )
 
@@ -27,12 +26,11 @@ do
       read -p "~/${f}.bak exists. Overwrite it? " -r
       if [[ $REPLY =~ ^[Yy]$ ]]
       then
-        rm -rf ~/${f}.bak
-        mv -i ~/$f ~/${f}.bak
+	(set -x; rm -rf ~/${f}.bak; mv -i ~/$f ~/${f}.bak)
       fi
     else
-        mv -i ~/$f ~/${f}.bak
+	(set -x; mv -i ~/$f ~/${f}.bak)
     fi
   fi
-  ln -s $pwd/$f ~/$f
+  (set -x; ln -s $pwd/$f ~/$f)
 done
