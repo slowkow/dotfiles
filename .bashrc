@@ -186,7 +186,8 @@ then
 
     # Create tmux sessions on these hosts.
     # if [[ " ${broad_hosts[@]} " =~ " $host " ]]
-    if test true
+    # if test true
+    if [[ "wm6ad-770" != "$host" ]]
     then
       echo "get tmux going"
         # Check for an existing session, or else create it.
