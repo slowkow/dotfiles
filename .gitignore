@@ -11,3 +11,8 @@ Thumbs.db
 
 # Vim swap files
 *.swp
+
+# Ignore vim plugins
+.vim/plugged/*
+
+archive/*
