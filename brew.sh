@@ -58,6 +58,9 @@ brew install git-lfs
 # Convert line endings
 brew install dos2unix
 
+# Alernative to `find`
+brew install fd
+
 # View images quickly
 brew install feh
 
