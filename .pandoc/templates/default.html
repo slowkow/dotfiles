@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$$endif$</title>
+  <style type="text/css">
+body { width: 55em; margin-left: auto; margin-right: auto;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAMAAACTkM4rAAAAM1BMVEXy8vLz8/P5+fn19fXt7e329vb4+Pj09PTv7+/u7u739/fw8PD7+/vx8fHr6+v6+vrs7Oz2LjW2AAAAkUlEQVR42g3KyXHAQAwDQYAQj12ItvOP1qqZZwMMPVnd06XToQvz4L2HDQ2iRgkvA7yPPB+JD+OUPnfzZ0JNZh6kkQus5NUmR7g4Jpxv5XN6nYWNmtlq9o3zuK6w3XRsE1pQIEGPIsdtTP3m2cYwlPv6MbL8/QASsKppZefyDmJPbxvxa/NrX1TJ1yp20fhj9D+SiAWWLU8myQAAAABJRU5ErkJggg==);
+}
+p { line-height: 150%; }
+pre { margin-left: 4em; }
+  </style>
+$for(css)$
+  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<div id="$idprefix$header">
+<h1 class="title">$title$</h1>
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</div>
+$endif$
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
