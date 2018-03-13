@@ -105,8 +105,8 @@ prompt_git() {
 
 if tput setaf 1 &> /dev/null; then
   tput sgr0; # reset colors
-  bold=''
-  # bold=$(tput bold)
+  # bold=''
+  bold=$(tput bold)
   reset=$(tput sgr0)
   # Solarized colors, taken from http://git.io/solarized-colors.
   black=$(tput setaf 0)
@@ -156,7 +156,7 @@ PS1+="\[${white}\] "
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] "
 PS1+="\[${green}\]\w"; # working directory full path
-PS1+="\$(prompt_git \"\[${white}\] \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_git \"\[${white}\] \[${yellow}\]\" \"\[${blue}\]\")"; # Git repository details
 PS1+="\n"
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1
