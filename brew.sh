@@ -174,3 +174,14 @@ brew install xz
 # Note: Installs node
 brew install yarn
 
+# Compiling R takes 5-10 minutes
+
+# Java
+brew cask install java
+
+# OpenBLAS (installs gcc and other dependencies)
+brew install openblas
+
+# R language for statistical computing
+brew install r --with-openblas --with-java
+
