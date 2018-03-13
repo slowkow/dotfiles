@@ -3,6 +3,9 @@
 files=(
 .bashrc
 .bash_profile
+.gitconfig
+.gitignore
+.inputrc
 )
 
 for f in ${files[*]}
