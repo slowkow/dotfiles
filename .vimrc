@@ -15,7 +15,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/seoul256.vim'
 
 Plug 'tpope/vim-sensible'
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ciaranm/detectindent'
 Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
@@ -47,6 +47,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -76,6 +77,7 @@ set number
 
 " Open file explorer
 map <C-n> :NERDTreeToggle<CR>
+map <C-p> :Files<CR>
 
 " Open Fuzzy Finder
 " map <C-p> :FZF<CR>
@@ -179,14 +181,15 @@ nmap ga <Plug>(EasyAlign)
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.pdf,*.gif
 
 " Ignore folders for ctrlp
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|jpg|png|pdf|gif)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+"   \ 'file': '\v\.(exe|so|dll|jpg|png|pdf|gif)$',
+"   \ 'link': 'some_bad_symbolic_links',
+"   \ }
 
 " let g:ctrlp_user_command = 'find %s -type f | grep -v node_modules/ | grep -v vendor/'
-let g:ctrlp_user_command = 'find %s -type f \( ! -iname "*.png" -and ! -iname "*.jpg" -and ! -iname "*.pdf" -and ! -iname "*.webp" -and ! -iname "*.svg" \) | grep -v node_modules/ | grep -v vendor/'
+" let g:ctrlp_user_command = 'find %s -type f \( ! -iname "*.png" -and ! -iname "*.jpg" -and ! -iname "*.pdf" -and ! -iname "*.webp" -and ! -iname "*.svg" \) | grep -v node_modules/ | grep -v vendor/'
+" let g:ctrlp_user_command = 'fd --type file --follow --hidden --exclude .git --exclude vendor/ --exclude .vim/ --exclude .git/ %s'
 
 let g:slime_target = "tmux"
 
