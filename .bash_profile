@@ -89,7 +89,8 @@ prompt_git() {
 
 if tput setaf 1 &> /dev/null; then
   tput sgr0; # reset colors
-  bold=$(tput bold)
+  bold=''
+  # bold=$(tput bold)
   reset=$(tput sgr0)
   # Solarized colors, taken from http://git.io/solarized-colors.
   black=$(tput setaf 0)
