@@ -1,20 +1,33 @@
 #!/usr/bin/env bash
 
+set -o xtrace
+
 files=(
 .bashrc
 .bash_profile
 .gitconfig
 .gitignore
 .inputrc
+.pandoc
 )
+
+pwd=$(pwd)
 
 for f in ${files[*]}
 do
-  if [[ -f ~/${f}.bak ]]
+  if [[ -e ~/$f ]]
   then
-    echo "Trying to 'mv ~/$f ~/${f}.bak' but ~/${f}.bak already exists! Please delete it before proceeding."
-    exit 1
+    if [[ -d ~/${f}.bak ]]
+    then
+      read -p "~/${f}.bak exists. Overwrite it? " -r
+      if [[ $REPLY =~ ^[Yy]$ ]]
+      then
+        rm -rf ~/${f}.bak
+        mv -i ~/$f ~/${f}.bak
+      fi
+    else
+        mv -i ~/$f ~/${f}.bak
+    fi
   fi
-  mv ~/$f ~/${f}.bak
-  ln -s $(pwd)/$f ~/$f
+  ln -s $pwd/$f ~/$f
 done
