@@ -1,6 +1,9 @@
 # Do nothing if this is not an interactive shell.
 [ -z "$PS1" ] && return
 
+# Set API keys for various services.
+[ -s ~/.api_keys ] && source ~/.api_keys
+
 alias ..='cd ..'
 alias ...='cd ../..'
 
