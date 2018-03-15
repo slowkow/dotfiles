@@ -43,9 +43,10 @@ Some of the settings were influenced by or copied directly from:
 [RadioSilence] stops apps from phoning home and wasting bandwidth.
 
 [Alfred]: https://alfredapp.com
+[Contexts]: https://contexts.co
 [Dash]: https://kapeli.com/dash
 [Flycut]: https://github.com/TermiT/Flycut
-[Homebrew]: https://brew.sh/
+[Homebrew]: https://brew.sh
 [Karabiner]: https://github.com/tekezo/Karabiner-Elements
-[RadioSilence]: https://radiosilenceapp.com/
+[RadioSilence]: https://radiosilenceapp.com
 
