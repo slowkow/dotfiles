@@ -5,6 +5,7 @@
 files=(
 .bashrc
 .bash_profile
+.config/karabiner
 .gitconfig
 .gitignore
 .inputrc

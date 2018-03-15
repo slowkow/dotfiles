@@ -2,11 +2,14 @@
 
 This repo documents how I like to set up my Macbook.
 
-Install [Karabiner] and remap <kbd>caps lock</kbd> to <kbd>esc</kbd>.
+First, install [Homebrew] and `brew install git`:
 
-Install [Homebrew] and `brew install git`.
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+```
 
-Then copy this repo:
+Then clone this repo:
 
 ```bash
 mkdir -p ~/work/github.com/slowkow
@@ -15,19 +18,10 @@ git clone git@github.com:slowkow/dotfiles.git
 cd dotfiles
 ```
 
-After installing Homebrew, run `bash brew.sh` to install lots of packages.
+Next, run `bash brew.sh` to install lots of packages.
 
-These languages will be installed automatically:
-
-- Perl
-- Python3 and Python2
-- Ruby
-- Node
-- Java
-- R
-- Go
-
-Then run `bash symlink.sh` to make symbolic links to your home folder.
+Then run `bash symlink.sh` to make symbolic links from the dotfiles to your
+home folder.
 
 Open `vim` and wait 30 seconds for the plugins to be installed.
 
@@ -36,6 +30,22 @@ Some of the settings were influenced by or copied directly from:
 - Mathias Bynens: https://github.com/mathiasbynens/dotfiles
 - Kenneth Reitz: https://github.com/kennethreitz/dotfiles
 
+## Other nice software
+
+[Karabiner] remaps <kbd>caps lock</kbd> to <kbd>esc</kbd>.
+
+[Contexts] provides a nice <kbd>alt</kbd>+<kbd>tab</kbd> menu to switch apps.
+
+[Alfred] searches for PDF files, folders, and keeps a nice clipboard history.
+
+[Dash] provides instant and convenient access to lots of documentation.
+
+[RadioSilence] stops apps from phoning home and wasting bandwidth.
+
+[Alfred]: https://alfredapp.com
+[Dash]: https://kapeli.com/dash
+[Flycut]: https://github.com/TermiT/Flycut
 [Homebrew]: https://brew.sh/
 [Karabiner]: https://github.com/tekezo/Karabiner-Elements
+[RadioSilence]: https://radiosilenceapp.com/
 
