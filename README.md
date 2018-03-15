@@ -35,13 +35,15 @@ Some of the settings were influenced by or copied directly from:
 [Karabiner] remaps buttons like <kbd>caps lock</kbd> to <kbd>esc</kbd> and
 <kbd>mouse4</kbd> to <kbd>⌘ </kbd>+<kbd>[</kbd>.
 
-[Contexts] provides a nice <kbd>alt</kbd>+<kbd>tab</kbd> menu to switch apps.
+[Contexts] provides a nice <kbd>⌘ </kbd>+<kbd>tab</kbd> menu to switch apps.
 
-[Alfred] searches for PDF files, folders, and keeps a nice clipboard history.
+[Alfred] replaces Spotlight to instantly search for PDF files, folders, and
+it keeps a nice clipboard history.
 
 [Dash] provides instant and convenient access to lots of documentation.
 
-[RadioSilence] stops apps from phoning home and wasting bandwidth.
+[RadioSilence] stops apps from phoning home and sending your information to
+servers.
 
 [Alfred]: https://alfredapp.com
 [Contexts]: https://contexts.co
