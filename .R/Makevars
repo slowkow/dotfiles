@@ -1,0 +1,4 @@
+# ~/.R/Makevars
+# Control how source code in R packages is compiled.
+
+#PKG_CFLAGS += -std=gnu99

@@ -10,6 +10,9 @@ files=(
 .gitignore
 .inputrc
 .pandoc
+.R
+.Rprofile
+.Renviron
 .sqliterc
 .tmux.conf
 .vim

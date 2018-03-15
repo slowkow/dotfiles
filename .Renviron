@@ -1,0 +1,4 @@
+# ~/.Renviron
+
+# If /usr/local/lib is not writable, uncomment this:
+#R_LIBS_USER="~/.local/lib/R/%a-%o-library/%v
