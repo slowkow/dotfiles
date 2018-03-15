@@ -32,7 +32,8 @@ Some of the settings were influenced by or copied directly from:
 
 ## Other nice software
 
-[Karabiner] remaps <kbd>caps lock</kbd> to <kbd>esc</kbd>.
+[Karabiner] remaps buttons like <kbd>caps lock</kbd> to <kbd>esc</kbd> and
+<kbd>mouse4</kbd> to <kbd>⌘ </kbd>+<kbd>[</kbd>.
 
 [Contexts] provides a nice <kbd>alt</kbd>+<kbd>tab</kbd> menu to switch apps.
 
