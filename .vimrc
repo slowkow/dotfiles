@@ -15,7 +15,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/seoul256.vim'
 
 Plug 'tpope/vim-sensible'
-" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
+
 Plug 'ciaranm/detectindent'
 Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
@@ -48,6 +50,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
