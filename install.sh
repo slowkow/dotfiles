@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
+# Download vim-plug
+curl -fLo .vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Install Homebrew.
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! command -v brew > /dev/null
+then
+  /usr/bin/ruby -e \
+    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # Install Xcode Command Line Tools.
-# xcode-select --install
+xcode-select --install
 
 # Use the latest Homebrew.
 brew update
@@ -15,7 +23,8 @@ brew upgrade
 # Install brew auto-update
 brew install terminal-notifier
 brew tap domt4/autoupdate
-# brew autoupdate --start --upgrade --cleanup --enable-notifications
+
+brew autoupdate --start --upgrade --cleanup --enable-notifications
 
 # Learn more about any package at: http://brewformulas.org/PACKAGE
 
@@ -97,11 +106,17 @@ brew install graphicsmagick
 # New version of grep
 brew install grep
 
+# HDF5 is for storing large datasets for fast retrieval
+brew install hdf5
+
 # Download a complete website to a local folder
 brew install httrack
 
 # Static site generator in Go
 brew install hugo
+
+# Quickly jump to a different directory
+brew install jump
 
 # Query JSON files
 brew install jq

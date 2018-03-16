@@ -18,7 +18,7 @@ git clone git@github.com:slowkow/dotfiles.git
 cd dotfiles
 ```
 
-Next, run `bash brew.sh` to install lots of packages.
+Next, run `bash install.sh` to install lots of packages.
 
 Then run `bash symlink.sh` to make symbolic links from the dotfiles to your
 home folder.
