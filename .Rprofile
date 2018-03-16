@@ -1,7 +1,7 @@
 # ~/.Rprofile
 
 options(
-  repos                  = c(CRAN="http://cloud.r-project.org/"),
+  repos                  = c(CRAN="https://cloud.r-project.org/"),
   max.print              = 1000,
   browserNLdisabled      = TRUE,
   deparse.max.lines      = 2,
