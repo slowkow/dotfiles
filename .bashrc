@@ -31,6 +31,9 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 # Perl
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
+# jump
+eval "$(jump shell --bind=j)"
+
 # Override default coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
