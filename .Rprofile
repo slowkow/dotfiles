@@ -1,25 +1,34 @@
 # ~/.Rprofile
 
-options(
-  repos                  = c(CRAN="https://cloud.r-project.org/"),
-  max.print              = 1000,
-  browserNLdisabled      = TRUE,
-  deparse.max.lines      = 2,
-  clustermq.scheduler    = "lsf",
-  clustermq.template.lsf = "/PHShome/ks38/clustermq.template.lsf",
-  # stringsAsFactors     = FALSE,
-  menu.graphics          = FALSE,
-  warnPartialMatchAttr   = TRUE,
-  warnPartialMatchDollar = TRUE
-)
-
-bioconductor <- function() {
-  source("http://bioconductor.org/biocLite.R")
+.First <- function() {
+  options(
+    repos                  = c(CRAN = "https://cran.rstudio.com/"),
+    # Print no more than this many lines
+    max.print              = 1000,
+    # Ignore newlines when browsing with browse()
+    browserNLdisabled      = TRUE,
+    # Give minimal output from traceback()
+    deparse.max.lines      = 2,
+    # Options for job scheduling, only for LSF on Partners servers
+    clustermq.scheduler    = "lsf",
+    clustermq.template.lsf = "/PHShome/ks38/clustermq.template.lsf",
+    # stringsAsFactors     = FALSE,
+    menu.graphics          = FALSE,
+    # Print warnings about partial matching of object attributes
+    warnPartialMatchAttr   = TRUE,
+    warnPartialMatchDollar = TRUE
+  )
+  # Make the home directory the first path.
+  # message("reversing libpaths")
+  # .libPaths(rev(.libPaths()))
 }
 
+# Check if this is an interactive R session.
 if (interactive()) {
-  # Show cool colors in interactive R sessions.
-  library(colorout)
+  # Color the errors, warnings, and other text.
+  require(colorout)
+  # Automatically load devtools.
+  suppressMessages(require(devtools))
 } else {
   # Show some traceback information when non-interactive scripts fail.
   options(error = function() {
@@ -28,8 +37,8 @@ if (interactive()) {
   })
 }
 
-# Make the home directory the first path.
-# .First <- function() {
-#   message("reversing libpaths")
-#   .libPaths(rev(.libPaths()))
-# }
+# Easily load the biocLite.R script
+bioconductor <- function() {
+  source("http://bioconductor.org/biocLite.R")
+}
+
