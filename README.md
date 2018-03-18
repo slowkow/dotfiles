@@ -2,6 +2,8 @@
 
 This repo documents how I like to set up my Macbook.
 
+Set macOS settings with `bash macos-settings.sh`.
+
 First, install [Homebrew] and `brew install git`:
 
 ```bash
