@@ -15,8 +15,8 @@
     # stringsAsFactors     = FALSE,
     menu.graphics          = FALSE,
     # Print warnings about partial matching of object attributes
-    warnPartialMatchAttr   = TRUE,
-    warnPartialMatchDollar = TRUE
+    # warnPartialMatchAttr   = TRUE,
+    # warnPartialMatchDollar = TRUE
   )
   # Make the home directory the first path.
   # message("reversing libpaths")
