@@ -1,1 +1,2 @@
+# Weather API https://darksky.net/dev
 export DARK_SKY_API_KEY=""
