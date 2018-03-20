@@ -64,6 +64,9 @@ pip install --upgrade pip setuptools
 brew install git
 brew install git-lfs
 
+# Delete files from a git repo history
+brew install bfg
+
 # Convert line endings
 brew install dos2unix
 
