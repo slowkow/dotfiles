@@ -1,6 +1,6 @@
-# Kamil Slowikowski's Dotfiles
+# Kamil's dotfiles
 
-This repo documents how I like to set up my Macbook.
+This repo documents how I like to set up my computers.
 
 Set macOS settings with `bash macos-settings.sh`.
 
@@ -32,7 +32,7 @@ Some of the settings were influenced by or copied directly from:
 - Mathias Bynens: https://github.com/mathiasbynens/dotfiles
 - Kenneth Reitz: https://github.com/kennethreitz/dotfiles
 
-## Other nice software
+## Other nice software for macOS
 
 [Karabiner] remaps buttons like <kbd>caps lock</kbd> to <kbd>esc</kbd> and
 <kbd>mouse4</kbd> to <kbd>⌘ </kbd>+<kbd>[</kbd>.
