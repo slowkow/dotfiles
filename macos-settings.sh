@@ -46,8 +46,8 @@ sudo nvram SystemAudioVolume=" "
 # defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 # 
 # # Expand save panel by default
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # 
 # # Expand print panel by default
 # defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
@@ -747,7 +747,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15 # normal minimum is 15 (2
 # ###############################################################################
 # 
 # # Prevent Photos from opening automatically when devices are plugged in
-# defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # 
 # ###############################################################################
 # # Messages                                                                    #
