@@ -2,3 +2,4 @@
 # Control how source code in R packages is compiled.
 
 #PKG_CFLAGS += -std=gnu99
+PKG_CFLAGS += -I/usr/X11/include

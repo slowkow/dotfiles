@@ -206,3 +206,6 @@ brew install openblas
 # R language for statistical computing
 brew install r --with-openblas --with-java
 
+# Install XQuartz, needed for R package "Cairo"
+brew cask install xquartz
+
