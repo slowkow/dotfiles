@@ -13,7 +13,7 @@
     clustermq.scheduler    = "lsf",
     clustermq.template.lsf = "/PHShome/ks38/clustermq.template.lsf",
     # stringsAsFactors     = FALSE,
-    menu.graphics          = FALSE,
+    menu.graphics          = FALSE
     # Print warnings about partial matching of object attributes
     # warnPartialMatchAttr   = TRUE,
     # warnPartialMatchDollar = TRUE
