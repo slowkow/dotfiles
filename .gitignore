@@ -13,8 +13,9 @@ Thumbs.db
 *.swp
 
 # Ignore vim plugins
+.vim/autoload/*
 .vim/plugged/*
+.vim/.netrwhist
 
 archive/*
-.vim/.netrwhist
 .Rhistory
