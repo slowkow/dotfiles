@@ -63,6 +63,7 @@ pip install --upgrade pip setuptools
 # Git version control
 brew install git
 brew install git-lfs
+brew install git-annex
 
 # Delete files from a git repo history
 brew install bfg
