@@ -211,3 +211,7 @@ brew cask install xquartz
 
 # Needed for R package "RMySQL"
 brew install mariadb-connector-c
+
+# Extract elements from HTML
+go get github.com/ericchiang/pup
+

@@ -26,7 +26,7 @@ alias lt='ls -Alht'
 
 # Go
 export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin
 
 # Perl
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
