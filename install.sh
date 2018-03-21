@@ -209,3 +209,5 @@ brew install r --with-openblas --with-java
 # Install XQuartz, needed for R package "Cairo"
 brew cask install xquartz
 
+# Needed for R package "RMySQL"
+brew install mariadb-connector-c
