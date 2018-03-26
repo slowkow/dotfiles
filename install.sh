@@ -219,3 +219,5 @@ brew install mariadb-connector-c
 # Extract elements from HTML
 go get github.com/ericchiang/pup
 
+# Needed for R packages: udunits2, units, ggforce
+brew install udunits
