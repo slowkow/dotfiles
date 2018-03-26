@@ -156,6 +156,9 @@ brew install pigz
 # Optimize PNG files
 brew install pngquant
 
+# Compute dissimilarity between two or more PNG files
+brew install dssim
+
 # Run SQL commands on CSV files: q "SELECT COUNT(*) FROM file.csv where c3 > 1"
 brew install q
 
