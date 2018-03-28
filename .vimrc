@@ -52,6 +52,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Plug 'ctrlpvim/ctrlp.vim'
 
+Plug 'junegunn/vim-emoji'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -59,6 +61,12 @@ call plug#end()
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 au Filetype python set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" Auto-complete emojis in markdown files with Ctrl+X+U
+augroup emoji_complete
+  autocmd!
+  autocmd FileType markdown setlocal completefunc=emoji#complete
+augroup END
 
 " to prefer expandtab to noexpandtab when detection is impossible:
 let g:detectindent_preferred_expandtab = 1
