@@ -34,6 +34,9 @@ Some of the settings were influenced by or copied directly from:
 
 ## Other nice software for macOS
 
+[iTerm2] replaces macOS Terminal and gives more configuration options for your
+command line experience.
+
 [Karabiner] remaps buttons like <kbd>caps lock</kbd> to <kbd>esc</kbd> and
 <kbd>mouse4</kbd> to <kbd>⌘ </kbd>+<kbd>[</kbd>.
 
@@ -52,6 +55,7 @@ servers.
 [Dash]: https://kapeli.com/dash
 [Flycut]: https://github.com/TermiT/Flycut
 [Homebrew]: https://brew.sh
+[iTerm2]: https://www.iterm2.com
 [Karabiner]: https://github.com/tekezo/Karabiner-Elements
 [RadioSilence]: https://radiosilenceapp.com
 
