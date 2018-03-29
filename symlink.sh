@@ -6,6 +6,7 @@ files=(
 .bashrc
 .bash_profile
 .config/karabiner
+.config/nvim
 .gitconfig
 .gitignore
 .inputrc
