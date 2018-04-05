@@ -217,7 +217,11 @@ brew cask install xquartz
 brew install mariadb-connector-c
 
 # Extract elements from HTML
-go get github.com/ericchiang/pup
+go get -v -u github.com/ericchiang/pup
 
 # Needed for R packages: udunits2, units, ggforce
 brew install udunits
+
+# Run jobs in parallel (alternative to GNU parallel)
+go get -v -u github.com/shenwei356/rush
+
