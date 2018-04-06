@@ -101,6 +101,12 @@ brew install gnupg
 # Golang
 brew install go
 
+# Extract elements from HTML
+go get -v -u github.com/ericchiang/pup
+
+# Run jobs in parallel (alternative to GNU parallel)
+go get -v -u github.com/shenwei356/rush
+
 # Graphviz makes diagrams of graphs and networks
 brew install graphviz
 
@@ -216,12 +222,24 @@ brew cask install xquartz
 # Needed for R package "RMySQL"
 brew install mariadb-connector-c
 
-# Extract elements from HTML
-go get -v -u github.com/ericchiang/pup
-
 # Needed for R packages: udunits2, units, ggforce
 brew install udunits
 
-# Run jobs in parallel (alternative to GNU parallel)
-go get -v -u github.com/shenwei356/rush
+# Mac App Store Command Line Interface
+brew install mas
+
+# Amazon app for reading ebooks
+mas 'Kindle', id: 405399194
+
+# Visualize disk space usage
+mas 'GrandPerspective', id: 1111570163
+
+# Resize windows neatly
+mas 'Magnet', id: 441258766
+
+# Ruby Version Manager
+gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+rvm install ruby-head
+gem install bundler
 
