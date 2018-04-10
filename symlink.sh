@@ -16,6 +16,7 @@ files=(
 .Renviron
 .sqliterc
 .tmux.conf
+.unison
 .vim
 .vimrc
 )

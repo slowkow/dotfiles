@@ -50,6 +50,10 @@ it keeps a nice clipboard history.
 [RadioSilence] stops apps from phoning home and sending your information to
 servers.
 
+[Unison] synchronizes folders across servers. Unfortunately, it is tedious to
+install the OCaml dependencies. The easiest way to get started is with the
+[binary files for version 2.40][unison-binary] for Linux and macOS.
+
 [Alfred]: https://alfredapp.com
 [Contexts]: https://contexts.co
 [Dash]: https://kapeli.com/dash
@@ -58,4 +62,6 @@ servers.
 [iTerm2]: https://www.iterm2.com
 [Karabiner]: https://github.com/tekezo/Karabiner-Elements
 [RadioSilence]: https://radiosilenceapp.com
+[Unison]: http://www.cis.upenn.edu/~bcpierce/unison/index.html
+[unison-binary]: http://unison-binaries.inria.fr/
 

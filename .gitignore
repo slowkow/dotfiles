@@ -19,3 +19,6 @@ Thumbs.db
 
 archive/*
 .Rhistory
+
+.unison/*
+!.unison/*.prf

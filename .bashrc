@@ -29,6 +29,8 @@ alias ll='ls -AlFh'
 alias la='ls -A'
 alias lt='ls -Alht'
 
+alias unison='/Applications/Unison.app/Contents/MacOS/cltool -ui text'
+
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin

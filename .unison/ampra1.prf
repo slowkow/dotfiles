@@ -1,0 +1,16 @@
+# https://kyup.com/tutorials/synchronize-files-unison/
+
+root = /Users/slowikow/Dropbox/work/github.com/immunogenomics/amp_phase1_ra
+root = ssh://rgs04//data/srlab/slowikow/ampra1
+
+path = R
+
+ignore = Name .ipynb_checkpoints*
+
+auto=true
+batch=true
+confirmbigdel=true
+owner=false
+group=false
+prefer=newer
+times=true
