@@ -331,7 +331,10 @@ chflags nohidden ~/Library
 # ###############################################################################
 # # Dock, Dashboard, and hot corners                                            #
 # ###############################################################################
-# 
+ 
+# Disable icon bouncing
+defaults write com.apple.dock no-bouncing -bool TRUE
+
 # # Enable highlight hover effect for the grid view of a stack (Dock)
 # defaults write com.apple.dock mouse-over-hilite-stack -bool true
 # 
