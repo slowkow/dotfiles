@@ -1,5 +1,8 @@
 # https://kyup.com/tutorials/synchronize-files-unison/
 
+# '>' keeps lines which start with '>'
+diff = diff -u CURRENT2 CURRENT1 | perl -pe 's/^\+/->/ or s/^\-/<-/'
+
 root = /Users/slowikow/Dropbox/work/github.com/immunogenomics/amp_phase1_ra
 root = ssh://rgs04//data/srlab/slowikow/ampra1
 
