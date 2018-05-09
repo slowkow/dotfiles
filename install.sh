@@ -243,3 +243,14 @@ curl -sSL https://get.rvm.io | bash -s stable
 rvm install ruby-head
 gem install bundler
 
+# LaTeX tools like pdflatex
+brew cask install basictex
+
+# Install texlive packages needed to build R package vignettes
+sudo tlmgr update --self
+sudo tlmgr update --all
+sudo tlmgr install titling framed inconsolata
+sudo tlmgr install collection-fontsrecommended
+
+# Needed for checks on size reduction of PDFs when developing R packages
+brew install qpdf
