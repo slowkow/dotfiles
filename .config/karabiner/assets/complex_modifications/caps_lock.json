@@ -1,0 +1,33 @@
+{
+  "title": "caps_lock → escape (without delay)",
+  "rules": [
+    {
+      "manipulators": [
+        {
+          "description": "caps_lock → escape",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+              {
+                  "key_code": "caps_lock",
+                  "hold_down_milliseconds": 1
+              }
+          ],
+          "to_if_alone": [
+              {
+                  "key_code": "caps_lock",
+                  "hold_down_milliseconds": 1
+              }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
