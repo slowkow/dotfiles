@@ -7,6 +7,7 @@ root = /Users/slowikow/Dropbox/work/github.com/immunogenomics/amp_phase1_ra
 root = ssh://rgs04//data/srlab/slowikow/ampra1
 
 path = R
+path = notebooks
 
 ignore = Name .ipynb_checkpoints*
 
