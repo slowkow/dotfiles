@@ -57,6 +57,8 @@ Plug 'junegunn/vim-emoji'
 " Add plugins to &runtimepath
 call plug#end()
 
+set timeoutlen=1000 ttimeoutlen=0
+
 " Set tab options
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
