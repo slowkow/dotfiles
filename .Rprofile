@@ -39,6 +39,6 @@ if (interactive()) {
 
 # Easily load the biocLite.R script
 bioconductor <- function() {
-  source("http://bioconductor.org/biocLite.R")
+  source("https://bioconductor.org/biocLite.R")
 }
 
