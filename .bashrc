@@ -11,6 +11,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
 
+alias serve='python3 -m http.server'
+
 alias zcat=gzcat
 
 # nvim
@@ -30,6 +32,15 @@ alias la='ls -A'
 alias lt='ls -Alht'
 
 alias unison='/Applications/Unison.app/Contents/MacOS/cltool -ui text'
+
+# Sandbox
+export PATH="$HOME/work/github.com/slowkow/sandbox:$PATH"
+
+# Brew
+export PATH="/usr/local/sbin:$PATH"
+
+# HDF5
+export PATH="/usr/local/opt/hdf5@1.8/bin:$PATH"
 
 # Go
 export GOPATH=$HOME/go
@@ -59,6 +70,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export PATH="$PATH:$HOME/.rvm/bin"
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# added by Miniconda3 installer
+export PATH="${HOME}/miniconda3/bin:$PATH"
 
 # ----------------------------------------------------------------------------
 # Shell Prompt
