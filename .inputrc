@@ -1,6 +1,47 @@
 # ~/.inputrc
 # https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html#Readline-Init-File-Syntax
 
+# set bind-tty-special-chars off
+# set echo-control-characters off
+# set enable-bracketed-paste on
+
+# Controls what happens when Readline wants to ring the terminal bell. If set
+# to ‘none’, Readline never rings the bell. If set to ‘visible’, Readline uses
+# a visible bell if one is available. If set to ‘audible’ (the default),
+# Readline attempts to ring the terminal’s bell.
+set bell-style none
+
+# If set to ‘on’, Readline displays possible completions using different colors
+# to indicate their file type. The color definitions are taken from the value
+# of the LS_COLORS environment variable. The default is ‘off’.
+set colored-stats on
+
+# If set to ‘on’, Readline performs filename matching and completion in a
+# case-insensitive fashion. The default value is ‘off’.
+set completion-ignore-case on
+
+# If set to ‘on’, and completion-ignore-case is enabled, Readline treats
+# hyphens (‘-’) and underscores (‘_’) as equivalent when performing
+# case-insensitive filename matching and completion.
+set completion-map-case on
+
+# Specifies the duration Readline will wait for a character when reading an
+# ambiguous key sequence (one that can form a complete key sequence using the
+# input read so far, or can take additional input to complete a longer key
+# sequence). If no input is received within the timeout, Readline will use the
+# shorter but complete key sequence. Readline uses this value to determine
+# whether or not input is available on the current input source (rl_instream by
+# default). The value is specified in milliseconds, so a value of 1000 means
+# that Readline will wait one second for additional input. If this variable is
+# set to a value less than or equal to zero, or to a non-numeric value, Readline
+# will wait until another key is pressed to decide which key sequence to
+# complete. The default value is 500.
+set keyseq-timeout 1
+
+# The editing-mode variable controls which default set of key bindings is used.
+# By default, Readline starts up in Emacs editing mode, where the keystrokes
+# are most similar to Emacs. This variable can be set to either ‘emacs’ or
+# ‘vi’.
 set editing-mode vi
 
 $if mode=vi
@@ -35,12 +76,6 @@ $if mode=vi
 
     # Need this to be able to type ~ in insert mode.
     "~":self-insert
-
-    # Reload this file with c-x c-r.
-    "\C-x\C-r": re-read-init-file
-
-    # Clear the screen in insert-mode too! yay
-    "\C-l": clear-screen
 
 $endif
 
