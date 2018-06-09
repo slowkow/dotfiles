@@ -68,6 +68,18 @@ brew install git-annex
 # Delete files from a git repo history
 brew install bfg
 
+# Ruby Version Manager
+gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+rvm install ruby-head
+gem install bundler
+
+#####################################################################
+# Other Stuff
+
+# Needed to compile older versions of Karabiner Elements
+brew install boost
+
 # Convert line endings
 brew install dos2unix
 
@@ -133,6 +145,18 @@ brew install jq
 
 # MP3 encoding
 brew install lame
+
+# Mac App Store Command Line Interface
+brew install mas
+
+# Amazon app for reading ebooks
+mas 'Kindle', id: 405399194
+
+# Visualize disk space usage
+mas 'GrandPerspective', id: 1111570163
+
+# Resize windows neatly
+mas 'Magnet', id: 441258766
 
 # Version control with hg
 brew install mercurial
@@ -205,6 +229,9 @@ brew install xz
 # Note: Installs node
 brew install yarn
 
+#####################################################################
+# The R-Project for Statistical Computing
+
 # Compiling R takes 5-10 minutes
 
 # Java
@@ -215,33 +242,6 @@ brew install openblas
 
 # R language for statistical computing
 brew install r --with-openblas --with-java
-
-# Install XQuartz, needed for R package "Cairo"
-brew cask install xquartz
-
-# Needed for R package "RMySQL"
-brew install mariadb-connector-c
-
-# Needed for R packages: udunits2, units, ggforce
-brew install udunits
-
-# Mac App Store Command Line Interface
-brew install mas
-
-# Amazon app for reading ebooks
-mas 'Kindle', id: 405399194
-
-# Visualize disk space usage
-mas 'GrandPerspective', id: 1111570163
-
-# Resize windows neatly
-mas 'Magnet', id: 441258766
-
-# Ruby Version Manager
-gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable
-rvm install ruby-head
-gem install bundler
 
 # LaTeX tools like pdflatex
 brew cask install basictex
@@ -254,3 +254,13 @@ sudo tlmgr install collection-fontsrecommended
 
 # Needed for checks on size reduction of PDFs when developing R packages
 brew install qpdf
+
+# Install XQuartz, needed for R package "Cairo"
+brew cask install xquartz
+
+# Needed for R package "RMySQL"
+brew install mariadb-connector-c
+
+# Needed for R packages: udunits2, units, ggforce
+brew install udunits
+
