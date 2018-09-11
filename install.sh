@@ -176,6 +176,9 @@ brew install miller
 # Alternative to ssh for poor quality internet connections
 brew install mosh
 
+# Alternative to unison for synchronizing filesystems
+brew install havoc-io/mutagen/mutagen
+
 # Alternative to `du`
 brew install ncdu
 
