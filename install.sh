@@ -192,6 +192,9 @@ brew install openssh
 brew install pandoc
 brew install pandoc-citeproc
 
+# Convert PDF to HTML
+brew install pdf2htmlEX
+
 # GNU parallel executes jobs concurrently locally or using remote computers
 brew install parallel
 
