@@ -176,6 +176,9 @@ brew install miller
 # Alternative to ssh for poor quality internet connections
 brew install mosh
 
+# Alternative to `du`
+brew install ncdu
+
 # New version of vim
 brew install neovim
 
