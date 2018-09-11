@@ -80,6 +80,9 @@ gem install bundler
 # Needed to compile older versions of Karabiner Elements
 brew install boost
 
+# Alternative to `diff`
+brew install diff-so-fancy
+
 # Convert line endings
 brew install dos2unix
 
