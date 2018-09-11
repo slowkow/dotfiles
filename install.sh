@@ -89,6 +89,9 @@ brew install diff-so-fancy
 # Convert line endings
 brew install dos2unix
 
+# Alternative to `ls`
+brew install exa
+
 # Alernative to `find`
 brew install fd
 

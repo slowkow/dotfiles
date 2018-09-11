@@ -29,11 +29,15 @@ alias cat='bat'
 export BAT_THEME='zenburn'
 
 # ls
-alias l='ls -CF'
-alias ls='ls --color=auto'
-alias ll='ls -AlFh'
-alias la='ls -A'
-alias lt='ls -Alht'
+# alias l='ls -CF'
+# alias ls='ls --color=auto'
+# alias ll='ls -AlFh'
+# alias la='ls -A'
+# alias lt='ls -Alht'
+alias l='exa'
+alias ls='exa'
+alias ll='exa -la'
+alias lt='exa -la -t modified --time-style long-iso --sort modified'
 
 alias unison='/Applications/Unison.app/Contents/MacOS/cltool -ui text'
 
