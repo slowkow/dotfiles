@@ -77,6 +77,9 @@ gem install bundler
 #####################################################################
 # Other Stuff
 
+# Alternative to `cat`
+brew install bat
+
 # Needed to compile older versions of Karabiner Elements
 brew install boost
 

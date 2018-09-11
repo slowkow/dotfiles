@@ -24,6 +24,10 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias cgrep='grep --color=always'
 
+# cat
+alias cat='bat'
+export BAT_THEME='zenburn'
+
 # ls
 alias l='ls -CF'
 alias ls='ls --color=auto'
