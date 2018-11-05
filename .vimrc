@@ -56,6 +56,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'junegunn/vim-emoji'
 
+Plug 'cespare/vim-toml'
+
 " Add plugins to &runtimepath
 call plug#end()
 
