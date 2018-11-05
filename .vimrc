@@ -225,3 +225,5 @@ if has("multi_byte")
 endif
 
 au BufRead,BufNewFile Snakefile,*.snakefile,*.snake set syntax=snakemake
+
+:command! -range=% Transpose :<line1>,<line2>!datamash transpose
