@@ -22,6 +22,8 @@ Plug 'ciaranm/detectindent'
 Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
 
+Plug 'zah/nim.vim'
+
 Plug 'jpalardy/vim-slime'
 " Put your cursor over the text you want to send and type:
 "   C-c, C-c       --- the same as slime
