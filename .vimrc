@@ -24,10 +24,29 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'zah/nim.vim'
 
+"function! _EscapeText_r(text)
+"  let l = strlen(a:text)
+"  if l < 4095
+"    return [a:text]
+"  endif
+"  let pieces = []
+"  let s = 0
+"  let e = min(s + 100, l)
+"  while s < l
+"    pieces += [a:text[s:e] . '\r']
+"    s = e + 1
+"    e = min(s + 100, l)
+"  endwhile
+"  return pieces 
+"endfunction
+" return ['source("~/.slime_paste")']
+
 Plug 'jpalardy/vim-slime'
 " Put your cursor over the text you want to send and type:
 "   C-c, C-c       --- the same as slime
 " Call :SlimeConfig if you need to send text elsewhere
+
+" Plug 'jalvesaq/Nvim-R'
 
 " For switching between tmux panes in vim
 Plug 'christoomey/vim-tmux-navigator'
@@ -58,8 +77,20 @@ Plug 'junegunn/vim-emoji'
 
 Plug 'cespare/vim-toml'
 
+Plug 'itchyny/calendar.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
+
+function! _EscapeText_r(text)
+  call system("cat > " . "~/.slime_r", a:text)
+ return ["source('~/.slime_r', echo = TRUE, max.deparse.length = 4095)\r"]
+endfunction
+
+function! _EscapeText_rmd(text)
+  call system("cat > " . "~/.slime_r", a:text)
+ return ["source('~/.slime_r', echo = TRUE, max.deparse.length = 4095)\r"]
+endfunction
 
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -209,6 +240,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.pdf,*.gif
 " let g:ctrlp_user_command = 'fd --type file --follow --hidden --exclude .git --exclude vendor/ --exclude .vim/ --exclude .git/ %s'
 
 let g:slime_target = "tmux"
+
+" calendar.vim
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
 
 augroup reload_vimrc
     autocmd!
