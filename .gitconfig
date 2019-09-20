@@ -1,10 +1,12 @@
 [user]
 	email = kslowikowski@gmail.com
 	name = Kamil Slowikowski
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
