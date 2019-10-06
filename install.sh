@@ -167,7 +167,7 @@ brew install mosh
 # brew install mozjpeg
 
 # Alternative to unison for synchronizing filesystems
-# brew install havoc-io/mutagen/mutagen
+brew install havoc-io/mutagen/mutagen
 
 # Alternative to `du`
 brew install ncdu
